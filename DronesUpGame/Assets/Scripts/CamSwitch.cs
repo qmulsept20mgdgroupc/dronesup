@@ -11,7 +11,7 @@ public class CamSwitch : MonoBehaviour
     public bool isFPPOn = false;
     
 
-    // Update is called once per frame
+    // The if checks wether the camera is in first-person or third-person and it swaps to the other one accordingly
     void Update()
     {
         if (Input.GetButtonDown("Camera") && !isFPPOn)
