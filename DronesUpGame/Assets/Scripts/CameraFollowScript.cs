@@ -13,7 +13,7 @@ public class CameraFollowScript : MonoBehaviour
 
 
     private Vector3 velocityCameraFollow;
-    public Vector3 behindPosition = new Vector3(0, 2, -10);
+    public Vector3 behindPosition = new Vector3(0, 2, -10);//position of the camera behind the drone
     public float angle;
     private void FixedUpdate()
     {

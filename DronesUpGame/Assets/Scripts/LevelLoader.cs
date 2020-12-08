@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+//This script is used in the loading screen scene to adjust the progress slider bar when the game is loading
 public class LevelLoader : MonoBehaviour
 {
     public GameObject loadingScreen;

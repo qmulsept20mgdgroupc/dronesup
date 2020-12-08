@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//The script changes the packages details when picked up so that it stays under the drone
 public class PickUp : MonoBehaviour
 {
     public Transform holder;

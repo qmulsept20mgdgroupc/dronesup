@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//The script checks if the object that is colliding with the player, in case which the count will increase and the collectible will be destroyed
 public class CollectGems : MonoBehaviour
 {
     public AudioSource collectSound;

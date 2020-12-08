@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
-
+//Options menu allows the user to adjust the value based on their preferences
 public class OptionsMenu : MonoBehaviour
 {
 

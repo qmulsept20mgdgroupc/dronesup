@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+//The time is caluclated based on the remaining time left at the end of a level.At the end the scores from all the levels are added up and presented to the player
 public class Score : MonoBehaviour
 {
 

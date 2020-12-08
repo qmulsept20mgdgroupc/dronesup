@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         Collectible.countCollect = 0;
         
     }
-
+    //The game marks the level as complete and resets the collectible count and player score
     public void CompleteLevel()
     {
         if(gameHasEnded == false)

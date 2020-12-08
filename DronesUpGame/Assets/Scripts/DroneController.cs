@@ -41,7 +41,7 @@ public class DroneController : MonoBehaviour
 
 
     public float upForce;
-
+   //regulates the Y axis movement based on if the drone is already rotating or if both I and K keys are pressed
     private void MovementUpDown()
     {
         if (Mathf.Abs(Input.GetAxis("Vertical")) > 0.2f || Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
@@ -111,7 +111,7 @@ public class DroneController : MonoBehaviour
     [HideInInspector] public float currentYRotation;
     private float rotateAmountByKeys = 2.5f;
     private float rotationYVelocity;
-
+    //Rotates the drone as long as the J or L keys are pressed
     private void Rotation()
     {
         if (Input.GetKey(KeyCode.J))
@@ -129,6 +129,7 @@ public class DroneController : MonoBehaviour
 
 
     private Vector3 velocityToSmoothDampZero;
+    //Prevents the drone speed from boing too high
     private void ClampingSpeedValues()
     {
         if (Mathf.Abs(Input.GetAxis("Vertical")) > 0.2f && Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
@@ -156,7 +157,7 @@ public class DroneController : MonoBehaviour
     private float sideMovementAmount = 300.0f;
     private float tiltAmountSideways;
     private float tiltAmountVelocity;
-
+  
     private void Swerve()
     {
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
@@ -170,7 +171,7 @@ public class DroneController : MonoBehaviour
             tiltAmountSideways = Mathf.SmoothDamp(tiltAmountSideways, 0, ref tiltAmountVelocity, 0.1f);
         }
     }
-
+    //The drone's sound changes with speed
     private AudioSource droneSound;
     void DroneSound()
     {
